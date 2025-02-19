@@ -1,11 +1,11 @@
-import './globals.css';
+import '../app/global.css'
 
-import type { Metadata } from "next";
+import type { Metadata } from 'next'
 import { Montserrat, Oxanium } from 'next/font/google'
 
 export const metadata: Metadata = {
-  title: "devstage",
-};
+  title: 'devstage',
+}
 
 const oxanium = Oxanium({
   weight: ['500', '600'],
@@ -19,17 +19,16 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" className={`${oxanium.variable} ${montserrat.variable}`}>
-      <body className= "bg-gray-900 text-gray-400 antialised bg-[url(/background.png)]"> 
-          {children}
-        </body>
+      <body className="bg-gray-900 text-gray-100 antialiased bg-[url(/background.png)] bg-no-repeat md:bg-right-top bg-top">
+        {children}
+      </body>
     </html>
-  );
+  )
 }
