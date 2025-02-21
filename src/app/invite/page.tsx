@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import logo from '../../assets/logo.svg'
+import { Stats } from './stats'
 import { InviteLinkInput } from './invite-link-input'
 import { Ranking } from './ranking'
-import { Stats } from './stats'
 
 export default function InvitePage() {
     const inviteLink = 'http://localhost3000/invite/39218382381'
