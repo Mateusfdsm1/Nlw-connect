@@ -1,5 +1,6 @@
-import Image from 'next/image'
+//pull request 
 
+import Image from 'next/image'
 import cooper from '../../assets/medal-cooper.svg'
 import gold from '../../assets/medal-gold.svg'
 import silver from '../../assets/medal-silver.svg'
